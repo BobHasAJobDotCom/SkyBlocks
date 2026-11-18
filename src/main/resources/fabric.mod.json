@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"id": "skyblocks",
+	"version": "${version}",
+	"name": "Sky Blocks",
+	"description": "Adds the Block of Sky and End portal Block.",
+	"authors": ["MonkePixels"],
+	"license": "LGPL-3.0",
+	"icon": "assets/skyblocks/icon.png",
+	"environment": "*",
+	"mixins": ["skyblocks.mixins.json"],
+	"entrypoints": {
+		"main": ["com.skyblocks.SkyBlocks"],
+		"client": ["com.skyblocks.client.SkyBlocksClient"]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
